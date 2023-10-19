@@ -1,10 +1,13 @@
-# hide IDE generated folders
-.vscode/
 # hide any file without extension
 *
 !/**/
 !*.*
+
 # hide exe outputs
 *.exe
+
 # DO NOT HIDE MAKEFILE
 !makefile
+
+# hide IDE generated folders
+.vscode/

@@ -1,6 +1,6 @@
 matrix:
 	g++ -o prog ./matrix.cpp
-	./prog input.txt
+	./prog matrix_input.txt
 
 clean:
 	[ ! -e ./prog ] || rm ./prog

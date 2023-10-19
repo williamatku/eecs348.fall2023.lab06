@@ -2,6 +2,7 @@
 #include <string>
 #include <sstream>
 #include <fstream>
+#include <iomanip>
 
 #define MAX_NxN_MATRIX_SIZE 100
 
@@ -142,9 +143,9 @@ void print_square_matrix(int** & matrixToPrint, int matrixSize) {
     
     // for every entry in the matrix
     for (int i = 0; i < matrixSize; i++) {
-        for (int j = 0; j < matrixSize; j++) 
-            // output current value with space between for readability
-            cout << matrixToPrint[i][j] << ' ';
+        for (int j = 0; j < matrixSize; j++)
+            // output current value in 4 char cell for readability
+            cout << setw(4) << matrixToPrint[i][j];
         // for every row in the matrix, output on new line
         cout << endl;
     } 

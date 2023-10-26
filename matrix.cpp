@@ -3,6 +3,7 @@
 #include <sstream>
 #include <fstream>
 #include <iomanip>
+#include <vector>
 
 #define MAX_NxN_MATRIX_SIZE 100
 
